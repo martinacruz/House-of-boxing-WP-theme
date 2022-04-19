@@ -1,0 +1,298 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Akshar", sans-serif;
+  background-color: #f2f3f4;
+}
+
+.btn-link {
+  background-color: #212121;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+// nav bar
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 2px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.055));
+  width: 100%;
+  z-index: 1;
+
+  .logo {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+
+    .nav-link {
+      margin-right: 30px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .btn-link {
+        background-color: tan;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+//banner
+.banner-container {
+  position: relative;
+
+  .banner-arrow {
+    position: absolute;
+    width: 100%;
+    top: 93%;
+    color: white;
+    text-align: center;
+
+    .arrow {
+      border: solid white;
+      border-width: 0 5px 5px 0;
+      display: inline-block;
+      padding: 8px;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+}
+
+//welcome
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .welcome-info {
+    text-align: center;
+    max-width: 900px;
+
+    p {
+      margin-top: 0;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+//back photos
+.photo-divider-1 {
+  background-image: url("../assets/imgs/hob-fight.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+
+.photo-divider-2 {
+  background-image: url("../assets/imgs/boxer-in-ring-SI.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+
+//coach intros
+.trainers-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .trainers {
+    display: flex;
+    max-width: 1000px;
+    margin-bottom: 20px;
+
+    .trainer-info {
+      text-align: center;
+      margin: 0 15px;
+
+      .trainer-photo {
+        img {
+          height: 350px;
+          width: 350px;
+        }
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+//classes
+.class-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 50px 0;
+
+  .class-info {
+    display: flex;
+    line-height: 2;
+    font-size: 18px;
+    max-width: 1000px;
+
+    .class-info-text {
+      margin-right: 15px;
+      p {
+        margin-top: 0;
+        float: left;
+      }
+    }
+
+    .class-info-img {
+      max-width: 450px;
+      max-height: 550px;
+      padding-top: 13px;
+    }
+  }
+}
+
+//events
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 50px 0;
+
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 18px;
+    max-width: 1000px;
+
+    .event {
+      border: 2px solid #212121;
+      margin-bottom: 20px;
+
+      .date-container {
+        color: white;
+        background-color: #212121;
+        display: inline-block;
+        padding: 5px 15px;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      .event-info-text {
+        padding: 0 50px 20px 50px;
+
+        h4 {
+          margin: 0;
+          font-size: 30px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: #212121;
+  padding: 80px 0 100px 0;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 25px 0;
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+
+    .nav-link {
+      margin-right: 30px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .terms-copy {
+    color: white;
+    padding-top: 25px;
+  }
+
+  #map {
+    margin-top: 25px;
+    height: 250px;
+    /* The height is 400 pixels */
+    width: 960px;
+    /* The width is the width of the web page */
+  }
+}

@@ -20,20 +20,21 @@ body {
 
 // nav bar
 .navbar {
-  position: fixed;
+  // position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  margin: 2px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.055));
+  padding: 5px 0;
+  // background: linear-gradient(rgba(0, 0, 0, 0.055));
+  background-color: #212121;
   width: 100%;
   z-index: 1;
 
   .logo {
+    padding-left: 30px;
     img {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
     }
   }
 
@@ -71,12 +72,12 @@ body {
   .banner-arrow {
     position: absolute;
     width: 100%;
-    top: 93%;
-    color: white;
+    top: 90%;
+    color: black;
     text-align: center;
 
     .arrow {
-      border: solid white;
+      border: solid black;
       border-width: 0 5px 5px 0;
       display: inline-block;
       padding: 8px;

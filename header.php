@@ -12,18 +12,18 @@
 <body <?php body_class(); ?>>
     <nav class="navbar">
         <div class="logo">
-        <a href="#" class="logo-link">
+        <a href="<?php echo site_url(); ?>" class="logo-link">
             <img src="<?php echo get_theme_file_uri("screenshot.png") ?>" alt="House of boxing logo">
         </a>    
         </div>
         <div class="nav-links-container">
             <ul class="nav-links">
-                <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="#">Classes</a></li>
-                <li class="nav-link"><a href="#">Membership</a></li>
-                <li class="nav-link"><a href="#">Coaches</a></li>
-                <li class="nav-link"><a href="#">Events</a></li>
-                <li class="nav-link"><a class="btn-link" href="#">Contact</a></li>
+                <li class="nav-link"><a href="<?php echo site_url('/about-us'); ?>">About</a></li>
+                <li class="nav-link"><a href="<?php echo site_url('/classes'); ?>">Classes</a></li>
+                <li class="nav-link"><a href="<?php echo site_url('/memberships'); ?>">Membership</a></li>
+                <li class="nav-link"><a href="<?php echo site_url('/coaches'); ?>">Coaches</a></li>
+                <li class="nav-link"><a href="<?php echo site_url('/events'); ?>">Events</a></li>
+                <li class="nav-link"><a class="btn-link" href="<?php echo site_url('/contact'); ?>">Contact</a></li>
             </ul>
         </div>
     </nav>

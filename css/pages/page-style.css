@@ -50,7 +50,8 @@
 }
 
 .wrapper .page-content .page-info .page-text {
-  line-height: 2;
+  line-height: 1.5;
+  padding-right: 12px;
 }
 
 .wrapper .page-content .page-info img {

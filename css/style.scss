@@ -116,23 +116,22 @@ body {
   }
 }
 
-//back photos
-.photo-divider-1 {
-  background-image: url("../assets/imgs/hob-fight.jpg");
+.photo-divider, .photo-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
   width: 100%;
+
 }
 
-.photo-divider-2 {
+//back photos
+.photo-1 {
+  background-image: url("../assets/imgs/hob-fight.jpg");
+}
+
+.photo-2 {
   background-image: url("../assets/imgs/boxer-in-ring-SI.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  width: 100%;
 }
 
 //coach intros

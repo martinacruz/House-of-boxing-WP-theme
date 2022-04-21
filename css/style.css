@@ -127,8 +127,7 @@ body {
   letter-spacing: 1px;
 }
 
-.photo-divider-1 {
-  background-image: url("../assets/imgs/hob-fight.jpg");
+.photo-divider, .photo-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,13 +135,12 @@ body {
   width: 100%;
 }
 
-.photo-divider-2 {
+.photo-1 {
+  background-image: url("../assets/imgs/hob-fight.jpg");
+}
+
+.photo-2 {
   background-image: url("../assets/imgs/boxer-in-ring-SI.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  width: 100%;
 }
 
 .trainers-content {

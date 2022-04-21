@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="photo-divider-1">
+        <div class="photo-divider photo-1">
         </div>
 
         <div class="trainers-container">
@@ -78,7 +78,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="photo-divider-2">
+        <div class="photo-divider photo-2">
         </div>
 
         <div class="event-container">

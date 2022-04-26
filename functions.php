@@ -13,15 +13,3 @@
     }
 
     add_action('after_setup_theme', 'hob_features');
-
-    function hob_post_types() {
-        register_post_type('coach', array(
-            'public' => true,
-            'menu_icon' => 'dashicons-groups',
-            'labels' => array(
-                'name' => 'Coaches'
-            )
-        ));
-    }
-
-    add_action('init', 'hob_post_types');

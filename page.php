@@ -9,7 +9,7 @@ while(have_posts()) {
         </div>
         <div class="content-container">
             <div class="page-content">
-                <h1>Example Title</h1>
+                <h1><?php the_title(); ?></h1>
                 <div class="page-info">
                     <div class="page-text">
                         <?php the_content(); ?>

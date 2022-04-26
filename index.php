@@ -33,7 +33,7 @@ get_header(); ?>
                 <div class="trainers">
                 <div class="trainer-info">
                     <div class="trainer-photo">
-                        <img src="<?php echo get_theme_file_uri('/assets/imgs/hob-trainer2.jpg') ?>" alt="">
+                        <img src="<?php echo get_theme_file_uri('/assets/imgs/trainers/hob-trainer2.jpg') ?>" alt="">
                     </div>
                     <div class="trainer-bio">
                         <h2>Carlos Barragan</h2>
@@ -42,7 +42,7 @@ get_header(); ?>
                 </div>
                 <div class="trainer-info">
                     <div class="trainer-photo">
-                        <img src="<?php echo get_theme_file_uri('/assets/imgs/hob-trainer1.jpg') ?>" alt="">
+                        <img src="<?php echo get_theme_file_uri('/assets/imgs/trainers/hob-trainer1.jpg') ?>" alt="">
                     </div>
                     <div class="trainer-bio">
                         <h2>SR. Barragan</h2>

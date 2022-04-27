@@ -1,6 +1,7 @@
 <?php
 get_header();
 
+
 while(have_posts()) {
     the_post(); ?>
     <div class="wrapper">
@@ -19,7 +20,6 @@ while(have_posts()) {
                 </div>
             </div>
         </div>
-        
     </div>
 
 

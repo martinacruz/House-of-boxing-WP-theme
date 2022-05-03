@@ -170,18 +170,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
 .trainers-content .trainers .trainer-info {
   text-align: center;
-  margin: 0 15px;
+  padding: 0 15px;
+  width: 450px;
 }
 
-.trainers-content .trainers .trainer-info .trainer-photo img {
-  height: 350px;
-  width: 350px;
+.trainers-content .trainers .trainer-info .trainer-bio a {
+  text-decoration: none;
+  color: black;
 }
 
 .trainers-content .trainers .trainer-info h2 {
@@ -194,6 +206,7 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 10px;
+  padding: 0 5px;
   text-align: left;
 }
 
@@ -284,6 +297,10 @@ body {
 
 .event-content .event-info .event .event-info-text {
   padding: 0 50px 20px 50px;
+}
+
+.event-content .event-info .event .event-info-text a {
+  color: black;
 }
 
 .event-content .event-info .event .event-info-text h4 {

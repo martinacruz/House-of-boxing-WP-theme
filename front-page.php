@@ -43,12 +43,17 @@ get_header(); ?>
                         <div class="trainer-info">
                             <div class="trainer-photo">
                                 <!-- coaches photo -->
+                                <a href=" <?php the_permalink() ?> "><img src="<?php the_post_thumbnail_url('coachHeadshot'); ?>" alt=""></a>
                             </div>
                             <div class="trainer-bio">
                                 <!-- coaches name -->
                                 <a href=" <?php the_permalink(); ?>"><h2> <?php the_title(); ?> </h2></a>
                                 <!-- coaches bio -->
-                                <p> <?php the_content(); ?> </p>
+                                <p> <?php if(has_excerpt()) {
+                                    echo get_the_excerpt();
+                                } else {
+                                    echo wp_trim_words(get_the_content(), 18);
+                                } ?> </p>
                             </div>
                         </div>
 
@@ -58,7 +63,7 @@ get_header(); ?>
             
             </div>
             <div class="trainer-btn btn">
-                <a href="#" class="btn-link">Other Trainers</a>
+                <a href="<?php echo get_post_type_archive_link('coach'); ?>" class="btn-link">Other Trainers</a>
             </div>
         </div>
         <hr style='' width='50%'>
@@ -91,9 +96,22 @@ get_header(); ?>
             <div class="event-content">
                 <h1>Upcoming Events</h1>
                 <div class="event-info">
-                    <?php $homepageEvents = new WP_Query(array(
-                        'posts_per_page' => 3,
-                        'post_type' => 'event'
+                    <?php 
+                    $today = date('Ymd');
+                    $homepageEvents = new WP_Query(array(
+                        'posts_per_page' => 2,
+                        'post_type' => 'event',
+                        'orderby' => 'meta_value_num',
+                        'meta_key' => 'event_date',
+                        'order' => 'ASC',
+                        'meta_query' => array(
+                            array(
+                                'key' => 'event_date',
+                                'compare' => '>=',
+                                'value' => $today,
+                                'type' => 'numeric'
+                            )
+                        )
                     ));
 
                     while($homepageEvents -> have_posts()) {
@@ -101,13 +119,20 @@ get_header(); ?>
 
                         <div class="event">
                         <div class="date-container">
-                            <span>May</span>
+                            <span> <?php 
+                                $eventDate = new DateTime(get_field('event_date'));
+                                echo $eventDate -> format('M');
+                            ?> </span>
                             <br>
-                            <span>22, 2022</span>
+                            <span> <?php echo $eventDate -> format('d') .', '. $eventDate -> format('Y') ?> </span>
                         </div>
                         <div class="event-info-text">
                             <a href=" <?php the_permalink(); ?>"><h4> <?php the_title(); ?> </h4></a>
-                            <p> <?php the_content(); ?> </p>
+                            <p> <?php if(has_excerpt()) {
+                                    echo get_the_excerpt();
+                                } else {
+                                    echo wp_trim_words(get_the_content(), 18);
+                                } ?> </p>
                         </div>
                     </div>
                     
@@ -115,7 +140,7 @@ get_header(); ?>
                     ?>
 
                 </div>
-                <a href="#" class="btn-link">More Events</a>
+                <a href=" <?php echo get_post_type_archive_link('event'); ?> " class="btn-link">More Events</a>
             </div>
         </div>
     </div>

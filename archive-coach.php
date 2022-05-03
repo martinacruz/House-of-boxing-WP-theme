@@ -16,15 +16,15 @@ get_header(); ?>
                 <?php
                     while(have_posts()){
                         the_post(); ?>
-                        <div class="trainer-info">
-                            <div class="trainer-photo">
+                        <div class="trainer-info-arch">
+                            <div class="trainer-photo-arch">
                                 <!-- coaches photo -->
+                                <a href=" <?php the_permalink() ?> "><img src="<?php the_post_thumbnail_url('coachHeadshot'); ?>" alt=""></a>
                             </div>
-                            <div class="trainer-bio">
+                            <div class="trainer-bio-arch">
                                 <!-- coaches name -->
                                 <a href=" <?php the_permalink(); ?>"><h2> <?php the_title(); ?> </h2></a>
                                 <!-- coaches bio -->
-                                <p> <?php the_content(); ?> </p>
                             </div>
                         </div>
 
@@ -32,9 +32,6 @@ get_header(); ?>
                 <?php }
                 ?>
             
-            </div>
-            <div class="trainer-btn btn">
-                <a href="#" class="btn-link">Other Trainers</a>
             </div>
         </div>
 

@@ -11,7 +11,7 @@ get_header();
 
         <div class="event-container">
             <div class="event-content">
-                <h1>Upcoming Events</h1>
+                <h1>Upcoming:</h1>
                 <div class="event-info">
                     <?php 
                     while(have_posts()) {
@@ -19,9 +19,12 @@ get_header();
 
                         <div class="event">
                         <div class="date-container">
-                            <span>May</span>
+                            <span><?php 
+                                $eventDate = new DateTime(get_field('event_date'));
+                                echo $eventDate -> format('M');
+                            ?></span>
                             <br>
-                            <span>22, 2022</span>
+                            <span><?php echo $eventDate -> format('d') .', '. $eventDate -> format('Y') ?></span>
                         </div>
                         <div class="event-info-text">
                             <a href=" <?php the_permalink(); ?>"><h4> <?php the_title(); ?> </h4></a>

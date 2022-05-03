@@ -1,0 +1,30 @@
+.trainer-info-arch {
+  text-align: center;
+  padding: 0 5px;
+  width: 25%;
+}
+
+.trainer-info-arch .trainer-photo-arch img {
+  width: 100%;
+}
+
+.trainer-info-arch .trainer-bio-arch a {
+  text-decoration: none;
+  color: black;
+}
+
+.trainer-info-arch h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .trainers {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .trainers .trainer-info-arch {
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=archive-styles.css.map */

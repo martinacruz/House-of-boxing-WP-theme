@@ -4,6 +4,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #212121;
 
         .banner-title{
             margin: 0;
@@ -15,6 +16,8 @@
         }
     }
 
+    
+
     .page-content {
         display: flex;
         flex-direction: column;
@@ -22,30 +25,34 @@
         align-items: center;
         padding: 30px 20px;
 
+
         h1 {
             font-size: 48px;
             margin-bottom: 15px;
         }
+
+        img {
+            padding: 30px;
+        }
         
         .page-info{
             display: flex;
-            max-width: 900px;
+            max-width: 600px;
 
             .page-text {
                 line-height: 1.5;
                 padding-right: 12px;
             }
-
-            img {
-                max-width: 300px;
-                max-height: 400px;
-                padding-top: 10px;
-            }
+            
         }
 
         p {
             margin-top: 0;
-            font-size: 22px;
+            font-size: 18px;
         }
+    }
+
+    .single {
+        flex-direction: row;
     }
 }

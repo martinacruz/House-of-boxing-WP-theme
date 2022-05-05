@@ -70,6 +70,16 @@ body {
   border-radius: 5px;
 }
 
+.navbar .nav-links .nav-link:last-child {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .navbar .nav-links {
+    display: none;
+  }
+}
+
 .banner-container {
   position: relative;
 }
@@ -108,7 +118,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 600px;
 }
 
 .welcome-content h1 {
@@ -119,6 +128,7 @@ body {
 .welcome-content .welcome-info {
   text-align: center;
   max-width: 900px;
+  padding: 20px 30px;
 }
 
 .welcome-content .welcome-info p {
@@ -127,12 +137,30 @@ body {
   letter-spacing: 1px;
 }
 
+@media (max-width: 700px) {
+  .welcome-content h1 {
+    font-size: 40px;
+  }
+  .welcome-content .welcome-info {
+    padding: 20px;
+  }
+  .welcome-content .welcome-info p {
+    font-size: 18px;
+  }
+}
+
 .photo-divider, .photo-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
   width: 100%;
+}
+
+@media (max-width: 700px) {
+  .photo-divider, .photo-banner {
+    height: 40vh;
+  }
 }
 
 .photo-1 {
@@ -180,15 +208,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
 .trainers-content .trainers .trainer-info {
   text-align: center;
-  padding: 0 15px;
-  width: 450px;
+  max-width: 450px;
 }
 
 .trainers-content .trainers .trainer-info .trainer-bio a {
@@ -206,8 +231,18 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 10px;
-  padding: 0 5px;
   text-align: left;
+  padding: 0 10px;
+}
+
+@media (max-width: 700px) {
+  .trainers-content h1 {
+    font-size: 36px;
+  }
+  .trainers-content .trainers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .class-content {
@@ -234,6 +269,7 @@ body {
   line-height: 2;
   font-size: 18px;
   max-width: 1000px;
+  padding: 0 30px;
 }
 
 .class-content .class-info .class-info-text {
@@ -243,12 +279,35 @@ body {
 .class-content .class-info .class-info-text p {
   margin-top: 0;
   float: left;
+  padding: 0 10px;
 }
 
 .class-content .class-info .class-info-img {
   max-width: 450px;
   max-height: 550px;
-  padding-top: 13px;
+  padding: 0 0 15px 0;
+}
+
+@media (max-width: 700px) {
+  .class-content .class-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .class-content .class-info .class-info-text {
+    margin: 0;
+  }
+  .class-content .class-info .class-info-img {
+    width: 350px;
+  }
 }
 
 .event-content {
@@ -279,6 +338,7 @@ body {
   line-height: 2;
   font-size: 18px;
   max-width: 1000px;
+  padding: 20px;
 }
 
 .event-content .event-info .event {
@@ -362,7 +422,22 @@ footer {
   margin-top: 25px;
   height: 250px;
   /* The height is 400 pixels */
-  width: 960px;
+  width: 80%;
   /* The width is the width of the web page */
+}
+
+@media (max-width: 700px) {
+  .footer-container .nav-links-container .nav-links {
+    padding-left: 0;
+  }
+  .footer-container .nav-links-container .nav-links .nav-link {
+    margin-right: 15px;
+  }
+  .footer-container .nav-links-container .nav-links .nav-link a {
+    font-size: 16px;
+  }
+  .footer-container .nav-links-container .nav-links .nav-link:last-child {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

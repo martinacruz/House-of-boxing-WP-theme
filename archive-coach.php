@@ -1,5 +1,7 @@
 <?php
-get_header(); ?>
+get_header();
+
+?>
 
 
 
@@ -11,7 +13,7 @@ get_header(); ?>
 <div class="trainers-container">
             <div class="trainers-content">
                 <h1>Meet Your New Family</h1>
-                <div class="trainers">
+                <div class="trainers-arch">
 
                 <?php
                     while(have_posts()){

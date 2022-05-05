@@ -15,9 +15,6 @@
             letter-spacing: 2px;
         }
     }
-
-    
-
     .page-content {
         display: flex;
         flex-direction: column;
@@ -54,5 +51,14 @@
 
     .single {
         flex-direction: row;
+    }
+}
+
+//trainers archive media querey
+@media (max-width: 700px) {
+    .content-container {        
+        .page-content {
+            flex-direction: column;
+        }
     }
 }

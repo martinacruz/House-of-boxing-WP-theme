@@ -1,12 +1,12 @@
 <?php
 get_header();
+pageBanner(array(
+    'title' => 'All Events',
+    'photo' => get_the_post_thumbnail()
+));
 ?>
 
 
-    <div class="wrapper">
-        <div class="photo-banner" style="background-image:URL('<?php echo get_theme_file_uri('/assets/imgs/female-boxer-SI.jpg') ?>');">
-            <h1 class="banner-title">All Events</h1>
-        </div>
 
 
         <div class="event-container">

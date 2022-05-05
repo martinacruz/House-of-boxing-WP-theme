@@ -1,27 +1,35 @@
 //trainers archive
-.trainer-info-arch {
-    text-align: center;
-    padding: 0 5px;
-    width: 25%;
-    .trainer-photo-arch img{
-        width: 100%
-    }
-    .trainer-bio-arch a {
-        text-decoration: none;
-        color: black;
-    }
+.trainers-arch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
 
-    h2 {
-        margin-top: 0;
+    .trainer-info-arch {
+        text-align: center;
+        padding: 0 5px;
+        width: 25%;
+        .trainer-photo-arch img{
+            width: 100%
+        }
+        .trainer-bio-arch a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
     }
 }
 
 //trainers archive media querey
 @media (max-width: 700px) {
-    .trainers {
-        display: block;
-        margin: 0;
-        padding: 0;
+.trainers-arch {
+    width: 100%;
+    
     .trainer-info-arch {
         width: 45%;
     }

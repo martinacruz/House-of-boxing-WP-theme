@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <title>House of Boxing</title>
 </head>
 <body <?php body_class(); ?>>
@@ -25,5 +23,10 @@
                 <li class="nav-link"><a href="<?php echo site_url('/events'); ?>">Events</a></li>
                 <li class="nav-link"><a class="btn-link" href="<?php echo site_url('/contact'); ?>">Contact</a></li>
             </ul>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>

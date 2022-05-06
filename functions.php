@@ -23,6 +23,8 @@ function pageBanner($args = NULL) {
 <?php }
 
     function hob_files() {
+
+        wp_enqueue_script('main-hob-js', get_theme_file_uri('/src/index.js'), NULL, '1.0', true);
         wp_enqueue_style('custom_google_fonts', '//fonts.googleapis.com/css2?family=Akshar:wght@300;400;600&display=swap');
         wp_enqueue_style('hob_main_style', get_theme_file_uri('/css/style.css'));
         wp_enqueue_style('hob_page_style', get_theme_file_uri('/css/pages/page-style.css'));

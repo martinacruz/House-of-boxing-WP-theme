@@ -74,9 +74,76 @@ body {
   margin: 0;
 }
 
-@media (max-width: 700px) {
+.navbar .menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  z-index: 999;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar #mobile-menu {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+  }
+  .navbar .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar #mobile-menu.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .navbar #mobile-menu.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar .logo {
+    padding-left: 15px;
+  }
+  .navbar .logo img {
+    width: 75px;
+    height: 75px;
+  }
   .navbar .nav-links {
-    display: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    background: #212121;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 89px;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+  .navbar .nav-links .nav-link {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+    padding: 0;
+  }
+  .navbar .nav-links.active {
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 }
 
@@ -397,7 +464,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-container .nav-links .nav-link {

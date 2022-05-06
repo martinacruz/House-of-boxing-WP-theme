@@ -23,29 +23,29 @@
         </div>
     </footer>
 
-    <script>
-        // Initialize and add the map
+<script>
+    // Initialize and add the map
 function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 32.676465567600715, lng: -117.06580746553215 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
+// The location of Uluru
+const uluru = { lat: 32.676465567600715, lng: -117.06580746553215 };
+// The map, centered at Uluru
+const map = new google.maps.Map(document.getElementById("map"), {
+zoom: 15,
+center: uluru,
+});
+// The marker, positioned at Uluru
+const marker = new google.maps.Marker({
+position: uluru,
+map: map,
+});
 }
 
 window.initMap = initMap;
-    </script>
-    <script async
+
+</script>
+<script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPDxcix2lJ-tJp6g_vJ4kop7bf6E1L9hc&callback=initMap">
 </script>
-
 <?php wp_footer(); ?>
 </body>
 </html>

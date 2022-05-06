@@ -28,7 +28,7 @@ pageBanner(array(
                         </div>
                         <div class="event-info-text">
                             <a href=" <?php the_permalink(); ?>"><h4> <?php the_title(); ?> </h4></a>
-                            <p> <?php the_content(); ?> </p>
+                            <p> <?php echo wp_trim_words(get_the_content(), 30) ?> </p>
                         </div>
                     </div>
                     

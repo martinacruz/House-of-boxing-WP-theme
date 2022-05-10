@@ -14,6 +14,11 @@
             <img src="<?php echo get_theme_file_uri("screenshot.png") ?>" alt="House of boxing logo">
         </a>    
         </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <div class="nav-links-container">
             <ul class="nav-links">
                 <li class="nav-link"><a href="<?php echo site_url('/about-us'); ?>">About</a></li>
@@ -23,10 +28,5 @@
                 <li class="nav-link"><a href="<?php echo site_url('/events'); ?>">Events</a></li>
                 <li class="nav-link"><a class="btn-link" href="<?php echo site_url('/contact'); ?>">Contact</a></li>
             </ul>
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
         </div>
     </nav>

@@ -2,21 +2,20 @@
         <div class="footer-container">
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#">Classes</a></li>
-                    <li class="nav-link"><a href="#">Membership</a></li>
-                    <li class="nav-link"><a href="#">Coaches</a></li>
-                    <li class="nav-link"><a href="#">Events</a></li>
+                    <li class="nav-link"><a href="<?php echo site_url('/about'); ?>">About</a></li>
+                    <li class="nav-link"><a href="<?php echo site_url('/classes'); ?>">Classes</a></li>
+                    <li class="nav-link"><a href="<?php echo site_url('/membership'); ?>">Membership</a></li>
+                    <li class="nav-link"><a href="<?php echo site_url('/coaches'); ?>">Coaches</a></li>
+                    <li class="nav-link"><a href="<?php echo site_url('/events'); ?>">Events</a></li>
                 </ul>
             </div>
-            <div id="map"></div>
-            <div class="terms-copy">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13433.448264981676!2d-117.0658559!3d32.6764163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa667694176a266d9!2sHouse%20of%20Boxing!5e0!3m2!1sen!2sus!4v1652222714983!5m2!1sen!2sus" id="map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="terms-copy">
                 <div class="terms">
                     <p>PRIVACY POLICY | TERMS OF USE FOR WEBSITE | DISCLAIMER</p>
                 </div>
                 <div class="copy">
                     <p>
-                        COPYRIGHT © 2022 HOB BOXING GYM. ALL RIGHTS RESERVED.
+                        COPYRIGHT © 2019 3RD STREET BOXING GYM. ALL RIGHTS RESERVED
                     </p>
                 </div>
             </div>

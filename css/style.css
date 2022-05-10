@@ -171,6 +171,18 @@ body {
   -webkit-transform: rotate(45deg);
 }
 
+@media (max-width: 950px) {
+  .banner-container .banner-arrow {
+    top: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-container .banner-arrow {
+    top: 75%;
+  }
+}
+
 .welcome-content {
   display: -webkit-box;
   display: -ms-flexbox;
